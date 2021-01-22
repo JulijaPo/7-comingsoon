@@ -9,12 +9,12 @@
 .hero .logo{
     display: inline-block;
     height: 30px;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 .hero .title {
     display: inline-block;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     text-transform: uppercase;
     font-size: 50px;
     line-height: 50px;
@@ -22,15 +22,70 @@
 .hero .subtitle {
     display: inline-block;
     width: 100%;
-    margin-bottom: 60px;
+    margin-bottom: 80px;
     font-size: 18px;
     line-height: 22px;
     color: #555;
 }
 .hero .clock{
-    margin-bottom: 60px;
+    margin-bottom: 80px;
 }
-.hero .form {
+.hero .SubscribeForm {
     margin-bottom: 20px;
 }
-.hero .mouse{}
+.hero .mouse{
+
+}
+.container{
+
+}
+.row{
+
+}
+.left-colum{
+    display: inline-block;
+    float: left;
+    width: 50%;
+}
+.main.block-title{
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}
+.main.block-description{
+    margin-bottom: 30px;
+    font-size: 18px;
+
+}
+.progress-bar{}
+.right-colum{
+    display: inline-block;
+    float: right;
+    width: 40%;
+}
+.form{}
+.email {
+    white-space: nowrap;
+    color: #ea1e63;
+    text-decoration: none;
+    
+}
+.email:hover {
+    text-decoration: underline;
+    
+}
+.linkMartox{ 
+    color: #ea1e63;
+    text-decoration: none;
+}
+.linkMartox:hover{ 
+    text-decoration: underline;
+}
+@media(max-width:900px){
+    .left-colum{
+        width: 100%;
+        margin-bottom: 60px;
+    }
+    .right-colum{
+        width: 100%;
+    }
+}
