@@ -27,7 +27,7 @@ margin:  0 calc(50% - 300px);
     }
 }
 @media(max-width: 680px){
-    .container > .row
+    .container > .row,
     .container > .short-row {
         width: 100%;
         margin: 0;
