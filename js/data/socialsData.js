@@ -28,4 +28,4 @@ const socialsData = [
     href: '#'
 }
 ]
-export{ sacialsData };
+export { socialsData };

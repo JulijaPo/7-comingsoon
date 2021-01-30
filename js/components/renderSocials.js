@@ -1,7 +1,7 @@
-import {allowedSocialicons} from '../data/allowedSocialicons'
+import {allowedSocialicons} from '../data/allowedSocialicons.js'
 function renderSocials(selector,data){
     //input validation
-if (typeof selector !== 'string || selector === "') {
+if (typeof selector !== 'string' || selector === '') {
     console.error('Error: netinkamas secektorius')
     return false};
     if(!Array.isArray(data) || data.length === 0){
@@ -15,7 +15,7 @@ if (typeof selector !== 'string || selector === "') {
         console.error('Error: nepavyko rasti elemento pagal pateikta selectoriu')
     return false}
     let HTML = ''
-    for ( let i = 0; i > data.length; i++){
+    for ( let i = 0; i < data.length; i++){
         const socialObjects = data[i] 
         //duomenu objecto validacija
 if(typeof socialObjects !== 'object' || Array.isArray(socialObjects) || !socialObjects.href || !socialObjects.icon|| typeof socialObjects.href !=='string' || typeof socialObjects.icon !=='string' || !allowedSocialicons.includes(socialObjects.icon)){
