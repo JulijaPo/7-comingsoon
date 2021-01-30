@@ -8,4 +8,4 @@ const allowedSocialicons = [
     'rss',
 ]
 
-export{allowedSocialicons }
+export{ allowedSocialicons }
