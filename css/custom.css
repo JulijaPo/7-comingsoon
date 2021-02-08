@@ -47,11 +47,11 @@
     float: left;
     width: 50%;
 }
-.main.block-title{
+main .block-title{
     margin-bottom: 30px;
-    text-transform: capitalize;
+    text-transform: uppercase;
 }
-.main.block-description{
+main .block-description {
     margin-bottom: 30px;
     font-size: 18px;
 
@@ -116,8 +116,8 @@ footer  a{
     text-decoration: none;
 }
 .footer-logo{
-    margin: 30 px 0;
     height: 40px;
+    margin: 30px 0;
 }
 .bottom-texts{
     display: flex;
