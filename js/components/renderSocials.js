@@ -2,7 +2,7 @@ import {allowedSocialicons} from '../data/allowedSocialicons.js'
 function renderSocials(selector,data){
     //input validation
     if (typeof selector !== 'string' || selector === '') {
-        console.error('Error: netinkamas secektorius')
+        console.error('Error: netinkamas selektorius')
         return false};
     if(!Array.isArray(data) || data.length === 0){
         console.error('Error:netinkamas data parametras')
@@ -25,7 +25,7 @@ function renderSocials(selector,data){
         console.console.warn('warning: netinkamo formato objektas', socialObjects);
     continue
     }
-    HTML += `<a href="&{socialObjects.href}" target="_blank" class="fa fa-&{socialObjects.icon}"></a>`
+    HTML += `<a href="${socialObjects.href}" target="_blank" class="fa fa-${socialObjects.icon}"></a>`
     }
      //post logic validation
     if(HTML === ''){
