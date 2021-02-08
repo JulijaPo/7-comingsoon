@@ -1,5 +1,5 @@
-.bg-blue{
-    background-color: #02A9F4;
+.bg-main{
+    background-color: var(--main-color)
 }
 .hero{
     text-align: center;
@@ -42,7 +42,7 @@
 .row{
 
 }
-.left-colum{
+.left-column{
     display: inline-block;
     float: left;
     width: 50%;
