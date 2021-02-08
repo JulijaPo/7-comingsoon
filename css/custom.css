@@ -81,7 +81,7 @@ main .block-description {
     text-decoration: underline;
 }
 @media(max-width:900px){
-    .left-colum{
+    .left-column{
         width: 100%;
         margin-bottom: 60px;
     }
