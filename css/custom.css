@@ -1,20 +1,25 @@
 .bg-main{
-    background-color: var(--main-color)
+    background-color: var(--main-color);
+
 }
 .hero{
     text-align: center;
     padding-bottom: 30px;
+    background-color: var(--main-color);
+    background-image: url(../img/backgr.jpg);
+    background-size: cover;
+    background-position: center;
 
 }
 .hero .logo{
     display: inline-block;
     height: 30px;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 .hero .title {
     display: inline-block;
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     text-transform: uppercase;
     font-size: 50px;
     line-height: 50px;
@@ -22,13 +27,14 @@
 .hero .subtitle {
     display: inline-block;
     width: 100%;
-    margin-bottom: 80px;
+    margin-bottom: 30px;
     font-size: 18px;
     line-height: 22px;
     color: #555;
+    opacity: 0.8;
 }
 .hero .clock{
-    margin-bottom: 80px;
+    margin-bottom: 40px;
 }
 .hero .SubscribeForm {
     margin-bottom: 20px;
@@ -47,11 +53,11 @@
     float: left;
     width: 50%;
 }
-.main.block-title{
+main .block-title{
     margin-bottom: 30px;
-    text-transform: capitalize;
+    text-transform: uppercase;
 }
-.main.block-description{
+main .block-description {
     margin-bottom: 30px;
     font-size: 18px;
 
@@ -81,7 +87,7 @@
     text-decoration: underline;
 }
 @media(max-width:900px){
-    .left-colum{
+    .left-column{
         width: 100%;
         margin-bottom: 60px;
     }
@@ -116,8 +122,8 @@ footer  a{
     text-decoration: none;
 }
 .footer-logo{
-    margin: 30 px 0;
     height: 40px;
+    margin: 30px 0;
 }
 .bottom-texts{
     display: flex;

@@ -5,6 +5,7 @@
     border: 3px solid #ffffff;
     border-radius: 10px;
     text-align: center;
+ 
 }
 .mouse > .wheel {
     display: inline-block;
