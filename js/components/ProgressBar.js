@@ -29,10 +29,12 @@ return true
         return `<div class="progress-bar">
                     <div class = "texts">
                         <div class="label">${progressBar.label}</div>
-                        <div class="value">${progressBar.value}%</div>
+                        <div class="value"  >${progressBar.value}%</div>
                     </div>
                     <div class = "bar">
-                        <div class = "progress"></div>
+                        <div class = "progress" style="width: ${progressBar.value}%">
+                            <div class = "loading"></div>
+                        </div>
                     </div>
                 </div>`
     }
