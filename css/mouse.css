@@ -5,6 +5,7 @@
     border: 3px solid #ffffff;
     border-radius: 10px;
     text-align: center;
+ 
 }
 .mouse > .wheel {
     display: inline-block;
@@ -16,6 +17,7 @@
     animation-name: mouseMove;
     animation-duration: 1.3s;
     animation-iteration-count: infinite;
+    
 }
 @keyframes mouseMove{
     0%{
