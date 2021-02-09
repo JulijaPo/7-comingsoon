@@ -7,7 +7,7 @@
 
 _24 group website project_
 
-This project is for educational porpuses only. Pull request are welcome, but priority for my real-life students! Thank you for your cooperation!
+This project is for educational porpuses only.
 
 Site published at https://julijapo.github.io/7-comingsoon/
 
