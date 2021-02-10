@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coming soon</title>
-   
+    <link rel="shortcut icon" href="./img/favikon.png" type="image/png">
     <!--init-->
     <link rel="stylesheet" href="./css/variables.css">
     <link rel="stylesheet" href="./css/reset.css">
@@ -15,8 +15,8 @@
     <link rel="stylesheet" href="./css/button.css">
     <link rel="stylesheet" href="./css/clock.css">
     <link rel="stylesheet" href="./css/form.css">
-    <link rel="stylesheet" href="/css/mouse.css">
-    <link rel="stylesheet" href="/css/progress-bar.css">
+    <link rel="stylesheet" href="./css/mouse.css">
+    <link rel="stylesheet" href="./css/progress-bar.css"
     <!--custom-->
     <link rel="stylesheet" href="./css/custom.css">
 </head>
@@ -28,7 +28,10 @@
            <p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex assumenda corporis ab ad dicta nesciunt sed alias nisi dolor tempore!</p>
            <div class="clock"></div>
            <form class="Subscribeform">
-               <input type="email" placeholder="Type your email">
+               <input 
+               data-validation-rule="email" 
+               type="email" 
+               placeholder="Type your email">
                <button class = "btn" type = 'submit'>Subscribe now</button>
            </form>
            <div class="mouse">
@@ -50,9 +53,20 @@
                 <p class="block-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio voluptatibus similique dolores  <a class="email" href="mailto:24-grupe@programuotojai.xzy">24-grupe@programuotojai.xzy</a>
                      at alias, eum culpa cum magnam fuga.</p>
             <form class="form">
-               <input type="text" placeholder="Name" required>
-               <input type="email" placeholder="Email" required>
-               <textarea placeholder="Message" required></textarea>
+               <input 
+               data-validation-rule="name" 
+               type="text" 
+               placeholder="Name" 
+               required>
+               <input  
+               data-validation-rule="email" 
+               type="email" 
+               placeholder="Email" 
+               required>
+               <textarea  
+               data-validation-rule="text" 
+               placeholder="Message" 
+               required></textarea>
                <button class="btn" type="submit">Send message </button>
             </form>
             </div>
