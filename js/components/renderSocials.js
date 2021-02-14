@@ -25,7 +25,11 @@ function renderSocials(selector,data){
         console.console.warn('warning: netinkamo formato objektas', socialObjects);
     continue
     }
-    HTML += `<a href="${socialObjects.href}" target="_blank" class="fa fa-${socialObjects.icon}"></a>`
+    HTML += `<a href="${socialObjects.href}" 
+    target="_blank" 
+    class="fa fa-${socialObjects.icon}"
+    rel="noreferrer noopener"
+    >${socialObjects.icon}</a>`
     }
      //post logic validation
     if(HTML === ''){
