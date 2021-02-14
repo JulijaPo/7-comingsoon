@@ -18,3 +18,17 @@
     animation-iteration-count: infinite;
 }
 
+@keyframes mouseMove{
+    0%{
+        margin-top: 4px;
+        opacity: 1; /*diplay:block */
+    }
+    30%{
+        opacity: 1;
+    }
+    100%{
+        margin-top: 12px;
+        opacity: 0; /* arba diplay:none arba backgroundcolor*/
+    }
+
+}

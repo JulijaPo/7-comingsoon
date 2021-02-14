@@ -2,18 +2,19 @@
     display: inline-block;
     width: 100%;
     color: white;
+    font-weight: bold;
 }
 .clock > .time {
     display: inline-block;
     width: 25%;
-   
 }
 .clock > .time > .value{
     font-size: 60px;
     line-height: 60px;
-
+    margin-bottom: 10px;
 }
 .clock > .time > .label{
+    margin-top: 10px;
     font-size: 15px;
     line-height: 15px;
     text-transform: uppercase;
