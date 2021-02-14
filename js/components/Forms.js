@@ -1,3 +1,4 @@
+import {Validation} from './Validation.js'
 class Forms {
     constructor(){
         this.forms = []
@@ -38,7 +39,23 @@ class Forms {
             //console.log(textareas)
             //console.log(allInputs)
             for (const input of allInputs){
-                console.log(input.value)
+                //console.log(input.dataset) // html'e data-validation-rule
+                const rule = input.dataset.validationRule
+                const text = input.value
+                switch (rule){
+                    case 'name':
+                    console.log(Validation.isValidName(text));
+                    break;
+                    case 'email':
+                    console.log(Validation.isValidEmail(text));
+                    break;
+                    case 'text':
+                    console.log(Validation.isValidText(text));
+                    break;
+
+                    default:
+                        break
+                }
             }
         })
         }

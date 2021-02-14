@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lets make website great again">
     <title>Coming soon</title>
     <link rel="shortcut icon" href="./img/favikon.png" type="image/png">
         <!--font-->
@@ -30,8 +31,9 @@
            <h1 class="title">Coming soon</h1>
            <p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex assumenda corporis ab ad dicta nesciunt sed alias nisi dolor tempore!</p>
            <div class="clock"></div>
-           <form class="Subscribeform">
-               <input 
+           <form class="form">
+               <label for="name">Name</label>
+               <input id="name"
                data-validation-rule="email" 
                type="email" 
                placeholder="Type your email">
@@ -42,7 +44,7 @@
            </div>
        </div> 
     </section>
-    <main  class="container">
+    <main id="main" class="container">
         <div class="row">
             <div class="left-column">
                 <h2 class="block-title">About startup</h2>
@@ -56,17 +58,23 @@
                 <p class="block-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio voluptatibus similique dolores  <a class="email" href="mailto:24-grupe@programuotojai.xzy">24-grupe@programuotojai.xzy</a>
                      at alias, eum culpa cum magnam fuga.</p>
             <form class="form">
+                <label for="msg-name">Name</label>
                <input 
+               id="msg-name"
                data-validation-rule="name" 
                type="text" 
                placeholder="Name" 
                required>
-               <input  
+               <label for="msg-email">Email</label>
+               <input 
+               id="msg-email" 
                data-validation-rule="email" 
                type="email" 
                placeholder="Email" 
                required>
-               <textarea  
+               <label for="msg">Message</label>
+               <textarea 
+               id="msg" 
                data-validation-rule="text" 
                placeholder="Message" 
                required></textarea>
@@ -75,7 +83,10 @@
             </div>
         </div> 
     </main>
-    <footer  class="container bg-main" >  
+    <footer id="footer" class="container bg-main" >  
+        <div class="row back-to-top">
+            <a href="#" class="btn fa fa-angle-up"></a>
+        </div>
         <div class="row socials">
             <a href="#" target="_blank" class="fa fa-facebook"></a>
             <a href="#" target="_blank" class="fa fa-twitter"></a>
@@ -83,10 +94,10 @@
             <a href="#" target="_blank" class="fa fa-tumblr"></a>
             <a href="#" target="_blank" class="fa fa-linkedin"></a>
             <a href="#" target="_blank" class="fa fa-instagram"></a>
-        <a href="#" class="fa fa-rss"></a>
+            <a href="#" class="fa fa-rss"></a>
         </div> 
         <div class="short-row">
-            <img class="footer-logo" src="./img/logo-white.jpg" alt="Footer logo">
+            <img class="footer-logo" src="./img/logo-white.png" alt="Footer logo">
         <div class="bottom-texts">
             <p>Copyright &copy; 2021 <a href="#">Matrox</a></p>
             <p>All rights reserved</p>
