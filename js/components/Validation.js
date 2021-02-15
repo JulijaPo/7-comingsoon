@@ -24,10 +24,18 @@ class Validation {
         }
 
         //tik abeceles raides (galimybe nurodyti kokios abeceles yra priimtinos)
-        if (!Validation.textContainsOnlyEnglishAlphabet(name)){
-            return 'tik english'
+        //if (!Validation.textContainsOnlyEnglishAlphabet(name)){
+        //    return 'tik english'
+         // }
+       
+
+        //tik abeceles raides (galimybe nurodyti kokios abeceles yra priimtinos)
+        if (!Validation.onlyAlphabet(name)){
+            return `Rastas neleistinas simbolis.`
         }
         return true
+
+
     }
 
     static isValidEmail(email){
@@ -92,8 +100,30 @@ class Validation {
         letterCount = text.split('').filter(symbol => symbol === letter).length
         return  letterCount === count
     } 
-    static textContainsOnlyEnglishAlphabet (text) {
-        return  text.match(/[^A-z]/g) === null
+    //static textContainsOnlyEnglishAlphabet (text) {
+        //return  text.match(/[^A-z]/g) === null
+    //}
+    static onlyAlphabet(text){
+        let abc = 'qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM'
+        return Validation.onlyAllowedSymbols(text, abc)
+    }
+    static onlyAllowedSymbols(text, allowedSymbols){
+        for (let t of text){
+           let singleAllowedTextSymbol = false
+           for(let a of allowedSymbols){
+               
+                if (a === t) {
+                   
+                   singleAllowedTextSymbol = true
+                    break;
+                }
+          }
+            //jei bent viena texte raide yra neleistina, tai radom kritine klaida
+           if(!singleAllowedTextSymbol){
+              return false
+           }
+        }
+        return true
     }
         
 }
